@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>点击效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:active{
+            background-color: green;
+            color: #FFFFFF;
+        }
+        .title{
+            width: 100%;
+            box-sizing: border-box;
+            line-height: 20px;
+            background-color: #FFFFFF;
+            font-size: 14px;
+            color: green;
+            padding: 20px;
+            border-top: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+        }
+        .top{
+            position: fixed;
+            top: 0;
+            display: none;
+        }
+        .content{
+            padding: 20px;
+        }
+        .num{
+            color: green;
+            font-size: 14px;
+        }
+        .num .index{
+            font-weight: bold;
+        }
+        .problem{
+            color: green;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .answer{
+            margin-top: 10px;
+        }
+        .row{
+            border:1px solid green;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .clear{
+            clear:both;
+        }
+        .col{
+            box-sizing: border-box;
+            float: left;
+            display: block;
+            height: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: green;
+            border-right: 1px solid green;
+            border-left: 1px solid green;
+        }
+        .col1{
+            width: 50%;
+        }
+        .col2{
+            width: 20%;
+        }
+        .inner{
+            margin-top: 20px;
+        }
+        .click{
+            background-color: green;
+            color: #FFFFFF;
+        }
+        .none{
+            border-top:1px solid #cccccc ;
+            border-bottom:1px solid #cccccc ;
+            line-height: 30px;
+        }
+        .none .answer{
+            display: none;
+        }
+        .none .num{
+            float: left;
+            color: #cccccc;
+            font-size: 13px;
+            line-height: 30px;
+        }
+        .none .problem{
+            float: left;
+            margin:0 20px;
+            line-height: 30px;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="title">
+        <h3>根据最近的三个月的体验和感觉回答</h3>
+    </div>
+    <div class="title top">
+        <h3>根据最近的三个月的体验和感觉回答</h3>
+    </div>
+    <div class="content">
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total">62</span></div>
+            <div class="problem">请选择您的性别:</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col1" href="javascript:void 0">男</a>
+                    <a class="col col1" href="javascript:void 0">女</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total"></span></div>
+            <div class="problem">您喜欢安静懒得说话吗?</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col2" href="javascript:void 0">没有</a>
+                    <a class="col col2" href="javascript:void 0">很少</a>
+                    <a class="col col2" href="javascript:void 0">有时</a>
+                    <a class="col col2" href="javascript:void 0">经常</a>
+                    <a class="col col2" href="javascript:void 0">总是</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total"></span></div>
+            <div class="problem">你面色晦暗或容易出现褐斑吗？</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col2" href="javascript:void 0">根本不</a>
+                    <a class="col col2" href="javascript:void 0">有一点</a>
+                    <a class="col col2" href="javascript:void 0">有些</a>
+                    <a class="col col2" href="javascript:void 0">相当</a>
+                    <a class="col col2" href="javascript:void 0">非常</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total"></span></div>
+            <div class="problem">你容易有黑眼圈吗？</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col2" href="javascript:void 0">没有</a>
+                    <a class="col col2" href="javascript:void 0">很少</a>
+                    <a class="col col2" href="javascript:void 0">有时</a>
+                    <a class="col col2" href="javascript:void 0">经常</a>
+                    <a class="col col2" href="javascript:void 0">总是</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total"></span></div>
+            <div class="problem">你口唇颜色偏暗吗？</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col2" href="javascript:void 0">根本不</a>
+                    <a class="col col2" href="javascript:void 0">有一点</a>
+                    <a class="col col2" href="javascript:void 0">有些</a>
+                    <a class="col col2" href="javascript:void 0">相当</a>
+                    <a class="col col2" href="javascript:void 0">非常</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total"></span></div>
+            <div class="problem">你皮肤或口唇干吗？</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col2" href="javascript:void 0">没有</a>
+                    <a class="col col2" href="javascript:void 0">很少</a>
+                    <a class="col col2" href="javascript:void 0">有时</a>
+                    <a class="col col2" href="javascript:void 0">经常</a>
+                    <a class="col col2" href="javascript:void 0">总是</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total"></span></div>
+            <div class="problem">你面部两颧潮红或偏红吗？</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col2" href="javascript:void 0">没有</a>
+                    <a class="col col2" href="javascript:void 0">很少</a>
+                    <a class="col col2" href="javascript:void 0">有时</a>
+                    <a class="col col2" href="javascript:void 0">经常</a>
+                    <a class="col col2" href="javascript:void 0">总是</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="inner none">
+            <div class="num"><span class="index">1</span>/<span class="total"></span></div>
+            <div class="problem">你两颧部有细微红丝吗？</div>
+            <div class="clear"></div>
+            <div class="answer">
+                <ul class="row">
+                    <a class="col col2" href="javascript:void 0">根本不</a>
+                    <a class="col col2" href="javascript:void 0">有一点</a>
+                    <a class="col col2" href="javascript:void 0">有些</a>
+                    <a class="col col2" href="javascript:void 0">相当</a>
+                    <a class="col col2" href="javascript:void 0">非常</a>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="jquery-1.11.3.js"></script>
+<script>
+    var index=0;
+    $(".total").text($(".inner").length);
+    for(var i=0;i<$(".inner").length;i++){
+        $(".index")[i].innerHTML=i+1;
+    }
+    $(".col").click(function(){
+        if(!$(this).hasClass("click")){
+            $(this).siblings().removeClass("click");
+            $(this).addClass("click");
+        }
+        if($(this).parents(".inner").find(".index").text()-1==index){
+            index++;
+            add();
+        }
+    });
+    function add(){
+        for(var i=0;i<$(".inner").length;i++){
+            if(i==index){
+                $(".inner").eq(i).removeClass("none");
+            }
+        }
+    }
+    add();
+    window.onscroll=function(){
+        if($(document).scrollTop()>=$(".title").outerHeight()){
+            $(".top").css("display","block");
+            return ;
+        }
+        $(".top").css("display","none");
+    }
+</script>
+</body>
+</html>
